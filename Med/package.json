@@ -1,0 +1,33 @@
+{
+  "name": "healthcare-blockchain-dapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint",
+    "clear": "rm -rf node_modules package-lock.json .next artifacts cache",
+    "deploy": "hardhat run scripts/deploy.js --network holesky",
+    "deploy-local": "hardhat run scripts/deploy.js --network localhost",
+    "node": "hardhat node"
+  },
+  "dependencies": {
+    "@next/font": "13.4.13",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.7",
+    "ethers": "^5.7.2",
+    "next": "13.4.13",
+    "openai": "^4.52.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.10.1",
+    "web3modal": "^1.9.9"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "hardhat": "^2.12.0"
+  }
+}
